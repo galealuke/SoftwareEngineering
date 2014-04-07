@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Luke-Laptop" name="GoodTest" skipped="0" tests="1" time="0.071" timestamp="2014-04-07T12:40:53">
+<testsuite errors="0" failures="0" hostname="Luke-Laptop" name="GoodTest" skipped="0" tests="1" time="0.07" timestamp="2014-04-07T12:51:56">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="GB" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner GoodTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\test\results\TEST-GoodTest.xml crashfile=C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\junitvmwatcher8423087581554211304.properties propsfile=C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\junit3942033522857097132.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner GoodTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\test\results\TEST-GoodTest.xml crashfile=C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\junitvmwatcher7416218377533117440.properties propsfile=C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\junit8790993238469010500.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
