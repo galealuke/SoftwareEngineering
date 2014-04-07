@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Luke-Laptop" name="GoodTest" skipped="0" tests="1" time="0.089" timestamp="2014-04-07T11:34:08">
+<testsuite errors="0" failures="1" hostname="Luke-Laptop" name="GoodTest" skipped="0" tests="1" time="0.088" timestamp="2014-04-07T12:35:10">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="GB" />
@@ -12,7 +12,7 @@
     <property name="ant.core.lib" value="C:\Program Files\NetBeans 8.0\extide\ant\lib\ant.jar" />
     <property name="javadoc.windowtitle" value="" />
     <property name="libs.jsp-compilation.javadoc" value="" />
-    <property name="user.dir" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest" />
+    <property name="user.dir" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest" />
     <property name="libs.javaee-api-7.0.src" value="" />
     <property name="java.vm.version" value="24.51-b03" />
     <property name="libs.DataBindingME.classpath" value="C:\Program Files\NetBeans 8.0\mobility\modules\ext\netbeans_databindingme.jar" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner GoodTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\test\results\TEST-GoodTest.xml crashfile=C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\junitvmwatcher6126261974683164065.properties propsfile=C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\junit5900293361065911376.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner GoodTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\test\results\TEST-GoodTest.xml crashfile=C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\junitvmwatcher523594026823143152.properties propsfile=C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\junit2625906799959378245.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -122,7 +122,7 @@
     <property name="libs.spring-framework400.src" value="" />
     <property name="libs.PostgreSQLDriver.src" value="" />
     <property name="sun.arch.data.model" value="32" />
-    <property name="basedir" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest" />
+    <property name="basedir" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest" />
     <property name="libs.jpa20-persistence.maven-pom" value="" />
     <property name="jar.compress" value="false" />
     <property name="libs.javaee-web-api-7.0.classpath" value="C:\Program Files\NetBeans 8.0\enterprise\modules\ext\javaee-web-api-7.0.jar" />
@@ -167,7 +167,7 @@
     <property name="libs.spring-webmvc4.0.maven-pom" value="" />
     <property name="libs.spring-framework300.src" value="" />
     <property name="libs.jstl.src" value="" />
-    <property name="empty.dir" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\empty" />
+    <property name="empty.dir" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\empty" />
     <property name="version-output" value="java version &quot;1.7" />
     <property name="test.binarytestincludes" value="" />
     <property name="libs.hibernate4-persistencemodelgen.src" value="" />
@@ -209,7 +209,7 @@
     <property name="libs.jsp-compiler.classpath" value="C:\Program Files\NetBeans 8.0\enterprise\ant\extra\jspcompile.jar" />
     <property name="javac.processorpath" value="C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar" />
     <property name="javac.compilerargs" value="" />
-    <property name="ant.file" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build.xml" />
+    <property name="ant.file" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest\build.xml" />
     <property name="libs.beans-binding.maven-pom" value="" />
     <property name="libs.hibernate4-support.javadoc" value="" />
     <property name="libs.jsf12.classpath" value="C:\Program Files\NetBeans 8.0\enterprise\modules\ext\jsf-1_2\commons-beanutils.jar;C:\Program Files\NetBeans 8.0\enterprise\modules\ext\jsf-1_2\commons-collections.jar;C:\Program Files\NetBeans 8.0\enterprise\modules\ext\jsf-1_2\commons-digester.jar;C:\Program Files\NetBeans 8.0\enterprise\modules\ext\jsf-1_2\commons-logging.jar;C:\Program Files\NetBeans 8.0\enterprise\modules\ext\jsf-1_2\jsf-api.jar;C:\Program Files\NetBeans 8.0\enterprise\modules\ext\jsf-1_2\jsf-impl.jar" />
@@ -282,7 +282,7 @@
     <property name="annotation.processing.processor.options" value="" />
     <property name="libs.testng.maven-pom" value="" />
     <property name="libs.jaxb.src" value="" />
-    <property name="work.dir" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest" />
+    <property name="work.dir" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest" />
     <property name="libs.jaxb.classpath" value="C:\Program Files\NetBeans 8.0\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans 8.0\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans 8.0\ide\modules\ext\jaxb\jaxb1-impl.jar;C:\Program Files\NetBeans 8.0\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 8.0\ide\modules\ext\jaxb\api\jaxb-api.jar;C:\Program Files\NetBeans 8.0\ide\modules\ext\jaxb\api\jsr173_1.0_api.jar" />
     <property name="do.depend" value="false" />
     <property name="libs.j2me_common_ant.classpath" value="C:\Program Files\NetBeans 8.0\mobility\modules\org-netbeans-modules-j2me-common-ant.jar;C:\Program Files\NetBeans 8.0\java\modules\org-netbeans-modules-classfile.jar" />
@@ -290,7 +290,7 @@
     <property name="libs.swing-layout.classpath" value="C:\Program Files\NetBeans 8.0\platform\modules\ext\swing-layout-1.0.4.jar" />
     <property name="libs.spring-webmvc3.0.classpath" value="C:\Program Files\NetBeans 8.0\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar" />
     <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
-    <property name="ant.file.AssignmentTest" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build.xml" />
+    <property name="ant.file.AssignmentTest" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest\build.xml" />
     <property name="libs.restlib.src" value="" />
     <property name="javac.source" value="1.7" />
     <property name="build.generated.dir" value="build/generated" />
@@ -303,7 +303,7 @@
     <property name="user.country.format" value="MT" />
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.7.0_51\jre\classes" />
     <property name="javac.target" value="1.7" />
-    <property name="built-jar.properties" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\built-jar.properties" />
+    <property name="built-jar.properties" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\built-jar.properties" />
     <property name="build.test.classes.dir" value="build/test/classes" />
     <property name="src.dir" value="src" />
     <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
@@ -346,7 +346,7 @@
     <property name="libs.jpa2-persistence.javadoc" value="" />
     <property name="libs.DataBindingME.javadoc" value="C:\Program Files\NetBeans 8.0\mobility\modules\docs\netbeans_databindingme-api.zip" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
-    <property name="java.class.path" value="C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar;C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\classes;C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\build\test\classes;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-junit4.jar" />
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar;C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\classes;C:\Users\Luke\SoftwareEngineering\AssignmentTest\build\test\classes;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-junit4.jar" />
     <property name="do.mkdist" value="true" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.jpa20-persistence.classpath" value="C:\Program Files\NetBeans 8.0\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar" />
@@ -355,7 +355,7 @@
     <property name="libs.javaee-api-7.0.maven-pom" value="" />
     <property name="sun.awt.enableExtraMouseButtons" value="true" />
     <property name="sun.desktop" value="windows" />
-    <property name="ant.file.AssignmentTest-impl" value="C:\Users\Luke\Documents\NetBeansProjects\AssignmentTest\nbproject\build-impl.xml" />
+    <property name="ant.file.AssignmentTest-impl" value="C:\Users\Luke\SoftwareEngineering\AssignmentTest\nbproject\build-impl.xml" />
     <property name="libs.hibernate4-persistence.src" value="" />
     <property name="libs.hibernate4-support.maven-pom" value="" />
     <property name="libs.restlib.javadoc" value="" />
@@ -395,7 +395,11 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.0\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="GoodTest" name="additionTest" time="0.002" />
+  <testcase classname="GoodTest" name="additionTest" time="0.009">
+    <failure message="expected:&lt;5&gt; but was:&lt;4&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;5&gt; but was:&lt;4&gt;
+	at GoodTest.additionTest(GoodTest.java:23)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
