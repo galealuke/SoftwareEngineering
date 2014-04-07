@@ -20,7 +20,7 @@ public class GoodTest {
 	@Test
 	public void additionTest(){
 		Calculator calculator = new Calculator();
-		assertEquals(5, calculator.add(2, 2));;
+		assertEquals(4, calculator.add(2, 2));;
 	}
         
 }
