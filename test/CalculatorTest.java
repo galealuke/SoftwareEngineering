@@ -42,14 +42,14 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         System.out.println("add");
-        int a = 1;
-        int b = 2;
+        int a = 3;
+        int b = 6;
         Calculator instance = new Calculator();
-        int expResult = 3;
+        int expResult = 9;
         int result = instance.add(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -58,14 +58,14 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         System.out.println("subtract");
-        int a = 3;
-        int b = 2;
+        int a = 10;
+        int b = 6;
         Calculator instance = new Calculator();
-        int expResult = 1;
+        int expResult = 4;
         int result = instance.subtract(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -75,13 +75,13 @@ public class CalculatorTest {
     public void testMultiply() {
         System.out.println("multiply");
         int a = 2;
-        int b = 2;
+        int b = 4;
         Calculator instance = new Calculator();
-        int expResult = 4;
+        int expResult = 8;
         int result = instance.multiply(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -90,14 +90,14 @@ public class CalculatorTest {
     @Test
     public void testDivide() {
         System.out.println("divide");
-        int a = 6;
-        int b = 3;
+        int a = 10;
+        int b = 5;
         Calculator instance = new Calculator();
         int expResult = 2;
         int result = instance.divide(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
     
 }
