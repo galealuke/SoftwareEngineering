@@ -48,7 +48,7 @@ public class Game {
 		
 		for(count =0;count<noOfPlayers; count++ )  //create player objects
 		{
-			Player player = new Player(mapArray[count].RandomGrassTile());
+			Player player = new Player(mapArray[count].randomGrassTile());
 			playerArray[count]= player;		
 		}
 		

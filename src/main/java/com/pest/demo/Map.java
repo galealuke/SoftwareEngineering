@@ -73,7 +73,7 @@ public class Map
 		}
     }
 	
-	public Position RandomGrassTile()  //method to return a random starting position on grass
+	public Position randomGrassTile()  //method to return a random starting position on grass
     {
         Random rand = new Random();
         Position randomPos;
@@ -87,7 +87,7 @@ public class Map
         }
         else
         { 
-            randomPos=RandomGrassTile();      
+            randomPos=randomGrassTile();      
         }
         return randomPos;
     } 
