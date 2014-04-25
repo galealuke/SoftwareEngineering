@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-=======
+
 package com.pest.demo;
->>>>>>> 4caf7ace56db368180baf54f5856e2d5492a18c1
+
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -62,53 +61,4 @@ public class GameTest {
 	}
 	
 }
-/*
-	public void tilesTest() {
-		assertEquals(true, game.setNumPlayers(2))
-	
-}*/
 
-	
-/*import static org.junit.Assert.*;
-
-import org.junit.Test;
-
-
-public class GameTest {
-
-	@Test
-	public void testGame() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testStartGame() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGameplay() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testHTMLfiles() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetNumPlayers() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testTiles2to4() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testTiles5to8() {
-		fail("Not yet implemented");
-	}
-
-}*/
