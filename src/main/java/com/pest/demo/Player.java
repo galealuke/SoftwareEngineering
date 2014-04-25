@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 package com.pest.demo;
-=======
-package com.pest.demo;
->>>>>>> 19c0572aef6de7ae2ff5bd5b52b0fee76de05331
+
 
 public class Player
 {
