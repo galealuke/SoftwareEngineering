@@ -1,5 +1,9 @@
+package com.pest.demo;
+
 import java.util.*;
-import java.io.*;
+impopackage com.pest.demo;
+
+rt java.io.*;
 public class Game {
 
 	 int noOfPlayers;
