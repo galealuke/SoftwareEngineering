@@ -1,3 +1,5 @@
+package com.pest.demo;
+
 public class Player
 {
 	
