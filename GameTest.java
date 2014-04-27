@@ -10,12 +10,12 @@ public class GameTest {
 	Game game;
 
 	Map map,map1,map2,map3,map4;
-	
-	Player player;
-	
-	
+
+	Player player,player1;
+
+
 	Position position1,position2,position3,position4,position5,position6,position7,position8;
-	
+
 	@Before
 	public void setUp() throws Exception {
 		game= new Game();
@@ -36,20 +36,29 @@ public class GameTest {
 		map3 = new Map(40);
 		player=new Player(2,4);
 		map3.square[2][4]='Z';
-		
+		player1=new Player(2,4);
+
 	}
 
-	
+
 	@Test	
 	public void gamePlayTest() 
 	{
 		//assertEquals(true, game.gamePlay(player, map3));
 		//assertEquals(false, game.gamePlay(player, map4));
 
-	
+
 	}
 
 
+	@Test	
+	public void moveChecksTest() 
+	{
+		assertEquals(true, game.moveChecks(position1,player1, map3));
+		assertEquals(false, game.moveChecks(position1,player1, map2));
+
+	}
+	
 	@Test	
 	public void outOfMapTest() 
 	{
@@ -57,18 +66,18 @@ public class GameTest {
 		assertEquals(true, game.outOfMap(position2, map));
 		assertEquals(false, game.outOfMap(position3, map));
 		assertEquals(false, game.outOfMap(position4, map));
-	
+
 	}
-	
+
 
 	@Test	
 	public void inWaterTest() 
 	{
 		assertEquals(false, game.inWater(position5, map1));
 		assertEquals(true, game.inWater(position6, map2));
-	
+
 	}
-	
+
 	@Test
 	public void setNumPlayersTest() 
 	{
@@ -79,9 +88,9 @@ public class GameTest {
 		assertEquals(false, game.setNumPlayers(9));
 		assertEquals(false, game.setNumPlayers(20));
 	}
-	
+
 	@Test	
-	public void noOfTilesTest() 
+	public void noOfTileTest() 
 	{
 		assertEquals(false, game.noOfTiles(4, 2));
 		assertEquals(true, game.noOfTiles(7, 2));
@@ -91,5 +100,13 @@ public class GameTest {
 		assertEquals(true, game.noOfTiles(50, 8));
 		assertEquals(false, game.noOfTiles(51, 8));
 	}
-	
+
+	@Test	
+	public void HTMLTest() 
+	{
+		assertEquals("<td style = background-color:blue></td>", game.HTMLtile(player, map1,4,4));
+		assertEquals("<td style = background-color:green></td>", game.HTMLtile(player, map2,7,40));
+		assertEquals("<td style = background-color:gray><img src = \"http://s1.postimg.org/6kjevoygr/player.png\"></td>", game.HTMLtile(player, map3,2,4));
+	} 
+
 }
