@@ -1,21 +1,21 @@
-//package com.pest.demo;
+package com.pest.demo;
 
 import java.util.*;
 import java.io.*;
 public class Game {
 
-	 int noOfPlayers; 
+	 int noOfPlayers;
      int tiles;
-   
+
 	public Game()  //game constructor
 	{
 		noOfPlayers=0;
 		tiles = 0;
 	}
-   
+
     public void startGame()
     {
-       
+
 		int count =0;
         Scanner sc= new Scanner(System.in);
         System.out.println("Please enter the number of players (2-8):  ");
@@ -32,85 +32,85 @@ public class Game {
 				input = sc.nextInt();
 			}while(!(noOfTiles(input,noOfPlayers))); // to keep looping until no of tiles is entered correctly depending on the number of players
 			tiles = input;
-        } 
-        Map newMap = new Map(tiles);        
+        }
+        Map newMap = new Map(tiles);
         newMap.generate();
-		
-		Map [] mapArray = new Map[8]; 
-		
+
+		Map [] mapArray = new Map[8];
+
 		for(count =0;count<noOfPlayers; count++ )  //create a map for each player
 		{
 			mapArray[count]=new Map(newMap.size, newMap.square);
 		}
-		
-		Player [] playerArray = new Player[8]; 
-		
+
+		Player [] playerArray = new Player[8];
+
 		for(count =0;count<noOfPlayers; count++ )  //create player objects
 		{
 			Player player = new Player(mapArray[count].randomGrassTile());
-			playerArray[count]= player;		
+			playerArray[count]= player;
 		}
-		
-			
-				
-		for(count =0;count<noOfPlayers; count++ ) 
+
+
+
+		for(count =0;count<noOfPlayers; count++ )
 		{
-		
+
 			HTMLfiles(playerArray[count],mapArray[count],count);
-		
+
 		}
-		
+
 		askForDirections(playerArray , mapArray); //ask each player for directions
-			
-		
+
+
     }
-    
+
     public void askForDirections(Player [] playerArray , Map [] mapArray)
     {
     	boolean win=false;
 		int endGame = 0;
 		int count=0;
-		
+
 		do{
 			for(count =0;count<noOfPlayers; count++ ) //to move each player in turns
 			{
 				System.out.println("Enter a direction you want to move, Player "+count+"( l/r/u/d) : " );
-				win = gamePlay(playerArray[count],mapArray[count]); 
-				if (win == true) 
+				win = gamePlay(playerArray[count],mapArray[count]);
+				if (win == true)
 				{
 					System.out.println("Player "+ count + " Wins!");
 					endGame ++;
 				}
 				HTMLfiles(playerArray[count],mapArray[count],count);
 			}
-			
+
 		}while(endGame==0); //to keep moving players until player(s) win
 		System.out.println("The game has been won by "+endGame+" players");
     }
-    
 
-	public boolean gamePlay(Player player , Map map) 
-	{ 
-	
+
+	public boolean gamePlay(Player player , Map map)
+	{
+
 		Scanner sc = new Scanner(System.in);
 		char input='a';
 		input = sc.next().charAt(0);
-		Position oldPosition = new Position((player.getPosition().x),(player.getPosition().y)); //save the old player position  
-		player.move(input);  //change player position 
+		Position oldPosition = new Position((player.getPosition().x),(player.getPosition().y)); //save the old player position
+		player.move(input);  //change player position
 
 		return moveChecks(oldPosition, player, map);
 	}
-	
+
 	public boolean moveChecks(Position oldPosition, Player player, Map map)
 	{
-		
-		if(!(outOfMap(player.getPosition(),map))) //if player tries to move out of map  
+
+		if(!(outOfMap(player.getPosition(),map))) //if player tries to move out of map
 		{
 			player.setPosition(oldPosition);
 			return gamePlay(player,map);
 		}
 		else if(!(inWater(player.getPosition(),map)))
-		{				
+		{
 			player.setPosition(player.startingPosition); //if player falls in the water it starts again from the initial position
 			return false;
 		}
@@ -122,9 +122,9 @@ public class Game {
 				return true;
 			}
 			else return false;
-		}				
+		}
 	}
-	
+
 	public boolean outOfMap(Position newPosition, Map map)
 	{
 			if(((newPosition.x)>map.size-1)||((newPosition.x)<0)||((newPosition.y)>map.size-1)||((newPosition.y)<0))
@@ -136,9 +136,9 @@ public class Game {
 			{
 				return true;
 			}
-	
+
 	}
-	
+
 	public boolean inWater(Position newPosition, Map map)
 	{
 		 if (map.getTileType(newPosition.x,newPosition.y)=='Y'||map.getTileType(newPosition.x,newPosition.y)=='B')
@@ -151,12 +151,12 @@ public class Game {
 		 {
 			return true;
 		 }
-	
+
 	}
-	
-	public  void HTMLfiles(Player player, Map map, int number)  //HTML display 
+
+	public  void HTMLfiles(Player player, Map map, int number)  //HTML display
 	{
-		PrintWriter out=null; 
+		PrintWriter out=null;
 		try
 		{
 			out = new PrintWriter("map__player_"+number+".html");  //linking printwriter object to output "map.html"
@@ -164,27 +164,27 @@ public class Game {
 		{
 			System.out.println("File doesnt exist");
 		}
-		
+
 		out.println("<!DOCTYPE html>" +"\n" +"<style> \ntable, th, td \n{ \nborder-collapse:collapse; \nborder:1px solid black;\n} \n td{\nheight:55px;\nwidth:55px;\n}\n</style>");  //at the start of every html document
-				
+
 		out.println("<table>"); //table start
-		for (int i = 0; i < map.getSize(); i++) 
+		for (int i = 0; i < map.getSize(); i++)
 		{
 		out.println("<tr>"); //for every row we print a row <tr>
-			for (int j = 0; j < map.getSize(); j++) 
+			for (int j = 0; j < map.getSize(); j++)
 			{
-				out.println(HTMLtile(player,map,i,j));							
+				out.println(HTMLtile(player,map,i,j));
 			}
 		out.println("</tr>");	//close each row
 		}
 		out.println("</table>"); //close the table
 		out.close();	//save
 	}
-	
+
 	public String HTMLtile(Player player, Map map, int i, int j)
 	{
 		String print=null;
-	
+
 		if (map.getTileType(i,j)=='X' || map.getTileType(i,j)=='Y' || map.getTileType(i,j)=='Z')
 			print = "<td style = background-color:gray>"; //if XYZ then background gray
 		if (map.getTileType(i,j)=='A')
@@ -193,7 +193,7 @@ public class Game {
 			print = "<td style = background-color:blue>";
 		else if (map.getTileType(i,j)=='C')
 			print = "<td style = background-color:yellow>";
-			
+
 		if(((player.getPosition().x)==i)&&((player.getPosition().y)==j))
 		{
 			print = print+"<img src = \"http://s1.postimg.org/6kjevoygr/player.png\">";
@@ -201,8 +201,8 @@ public class Game {
 		print =print+"</td>";
 		return print;
 	}
-	
-	
+
+
 	public boolean setNumPlayers(int n)
 	{
 		if (n < 2 || n >8)
@@ -214,10 +214,10 @@ public class Game {
 			noOfPlayers=n;
 			return true;
 		}
-	
+
 	}
-    
-	
+
+
 	public boolean noOfTiles(int n, int noOfPlayers)
 	{
 		 if(noOfPlayers>1 && noOfPlayers < 5)
@@ -229,15 +229,15 @@ public class Game {
             }
 			else  if(noOfPlayers>4 && noOfPlayers < 9)
             {
-			
+
                 if (n < 8 || n >50)
 					return false;
 				else
-					return true; 
-			 }     
+					return true;
+			 }
 			else
 				return false;
 	}
-	
+
 
 }
