@@ -81,7 +81,7 @@ public class GameTest {
 	}
 	
 	@Test	
-	public void noOfTilesTest() 
+	public void noOfTileTest() 
 	{
 		assertEquals(false, game.noOfTiles(4, 2));
 		assertEquals(true, game.noOfTiles(7, 2));
@@ -90,6 +90,14 @@ public class GameTest {
 		assertEquals(true, game.noOfTiles(8, 8));
 		assertEquals(true, game.noOfTiles(50, 8));
 		assertEquals(false, game.noOfTiles(51, 8));
+	}
+	
+	@Test	
+	public void HTMLTest() 
+	{
+		assertEquals("<td style = background-color:blue></td>", HTMLtiles(player, map1,4,4));
+		assertEquals("<td style = background-color:green></td>", HTMLtiles(player, map2,7,40));
+		assertEquals("<td style = background-color:yellow><img src = \"http://s1.postimg.org/6kjevoygr/player.png\"></td>", HTMLtiles(player, map3,2,4));
 	}
 	
 }
